@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>マイポートフォリオ</title> 
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        <link href = "css/style.css" rel = "stylesheet">   
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    </head>
+    <body id="portfolio">
+        <header>
+            <a href="index.html"><img class = "logo" src = "images/homelogo_white.png"></a>
+            <div class="test-nav">
+                <ul class="nav nav-pills nav-fill">
+                    <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">PORTFOLIO</a>
+                    </li>
+                    <li class="nav-item">
+                    <a class="nav-link" href="game.html" >GAME</a>
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main>
+            <h1 class="page-top">MUGI PORTFOLIO</h1>
+            <p>このページではむぎが作った作品を紹介します<br>楽しんで見てください</p>
+            <h2 class="portfolio-component">Unity</h2>
+            <hr width="100%" size="3" noshade color="black">
+            <video src="videos/VRShooting.mp4" loop class="portfolio-content" controls></video>
+            <p>この作品は「人類滅亡」というお題に沿った作品を作りました。<br>VRゲームを作成してみたいと思い、Oculus Questで動くシューティングゲームを作成しました。</p>
+            <a href="https://unityroom.com/games/mugi31415_clock" target="_blank"><img src="images/tokiyosusume2.jpg" class="portfolio-content"></a>
+            <p>この作品は「1weekGameJam」に参加する際に作成しました。<br>お題が「回」だったので時計の針が「回」ることをイメージしました。</p>
+            <video src="videos/6ballpuzzle_Trim.mp4" loop class="portfolio-content" controls></video>
+            <p>このゲームはボールを6個つなげていくパズルゲームです。<br>スコアが上がるごとにスピードが上がるので適度な緊張感を味わえます。</p>
+            <p>フルバージョン</p>
+            <a href="https://youtu.be/771Haletc2Q">YouTube</a>
+            <h2 class="portfolio-component">python</h2>
+            <hr width="100%" size="3" noshade color="black">
+            <br>
+            <img src="images/linebot-時間割.png" width="300px" class="portfolio-verticlecontent">
+            <p>初めて作成したbotです。<br>曜日を入力すると、その曜日の時間割を教えてくれるようになっています。<br>その他の入力だとスタンプをつけておうむ返ししてくれます。</p>
+            <a href="https://mugi31415-blog-2.herokuapp.com/list/" target="_blank"><img src="images/portfolio_04.png" class="portfolio-content"></a>
+            <p>Djangoの学習用に作成したブログです。ログイン機能やアニメーションを実装する予定です。<br>デプロイで一番苦労しました。</p>
+        </main>
+        <footer>
+            <small>© 2021 mugi</small>
+        </footer>
+    </body>
+</html> 
