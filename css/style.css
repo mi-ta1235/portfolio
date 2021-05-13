@@ -1,112 +1,50 @@
 @charset "utf-8";
 
-#home{
-    background-color: #666666;
-    background-image: url(../images/background_home2.jpg);
-    background-repeat: repeat-y;
-    background-position: center top;
-    background-size: cover; /* 縦横比は維持で全体を覆う */
-    min-height: 100vh; /* 高さの最小値 */
-}
-
-#about{
-    background-color:#ffffff;
-    background-image: url(../images/background_about.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover; /* 縦横比は維持で全体を覆う */
-    height: 140px;
-}
-
-#portfolio{
-    background-color: #7f8dd3;
-    background-image: url(../images/background_portfolio.png);
-    background-repeat: repeat;
-    background-position: center top;
-    background-size: cover; /* 縦横比は維持で全体を覆う */
-    height: 140px;
-}
-
-#game{
-    background-color: #ffffff;
-    background-image: url(../images/background_game_top.png);
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: cover; /* 縦横比は維持で全体を覆う */
-    height: 140px;
-}
-
-header{
-    position: fixed;
-    background-color: #ffffff;
-    width: 100%;
-    /* ヘッダーの中身を横並びにする */
-    display: flex; 
-    /* 横並びにしたものを両端と均等に配置する */
-    justify-content: space-between;
-    /* 上下、余白の数値 */
-    margin: 0;
-    padding: 0;
-    border: 6px solid;
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    z-index: 10;
-}
-
 body{
+    background-image: linear-gradient(135deg, rgb(33, 52, 77), rgb(34, 77, 57));
+    color: #fff;
     margin: 0;
     padding: 0;
     display: flex;
     flex-flow: column;
     min-height: 100vh;
+    font-family: serif;
 }
 
-.logo{
-    width: 50px;
-    height: 50px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+header {
+    margin-left: 50px;
+    margin-top: 20px;
 }
 
 .test-nav{
     justify-content: space-between;
+    text-align: center;
     display: flex;
+    flex-direction: row;
     margin: auto;
+    animation: titleAnimation 1.5s;
+}
+
+.test-nav ul {
+    margin-top: 10px;
+    margin-right: 100px;
 }
 
 .test-nav li{
     font-size: 24px;
-    margin-left: 80px;
-    margin-right: 80px;
-    list-style: none;
-}
-
-.global-nav{
-    display: flex;
-    margin-top: 15px;
-}
-
-.global-nav li{
-    font-size: 20px;
-    margin-left: 42px;
-    list-style: none;
-}
-
-.global-nav a{
-    color: #ffffff;
-    text-decoration: none;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .nav-link{
-    color: black;
+    color: rgb(255, 255, 255);
     position: relative;
     display: inline-block;
     text-decoration: none;
 }
 
 .nav-link:hover{
-    color: #000000;
+    color: #678bff;
 }
 
 .nav-link::after{
@@ -116,7 +54,7 @@ body{
     content: '';
     width: 100%;
     height: 2px;
-    background: #333;
+    background: rgb(255, 255, 255, 255);
     transform: scale(0, 1);
     transform-origin: right top;
     transition: transform .3s;
@@ -135,64 +73,19 @@ main{
     flex: 1;
 }
 
-#home main{
-    margin: 0;
-    background-size: auto;
-    padding: 100px;
-}
-
-#portfolio main{
-    margin: 0;
-    background-color: #ffffff;
-    background-size: auto;
-    padding: 100px;
-}
-
-#game main{
-    margin: 0;
-    background-color: #ffffff;
-    background-size: auto;
-    padding: 100px;
-}
-
-#about main{
-    margin: 0;
-    background-color: #ffffff;
-    background-size: auto;
-    padding: 100px;
-}
-
-.page-top{
-    padding-top: 5%;
-}
-
-h1{
-    font-size: 46px;
-    color: #000000;
-}
-h2{
-    font-size: 32px;
-    color: #000000;
-}
-
 p{
     font-size: 18px;
     font-weight: 500;
 }
 
 footer{
-    color: white;
-    background-color: #3f3f3f;
+    background-color: #9e9e9e60;
     text-align: center;
     margin: 0px auto;
     padding: 26px 0;
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-.game-wrapper{
-    margin-top: 10%;
 }
 
 .profile-content{
@@ -216,36 +109,6 @@ footer{
     height: 240px;
 }
 
-.portfolio-component{
-    margin-top: 100px;
-}
-
-.portfolio-content{
-    margin-top: 60px;
-    margin-bottom: 20px;
-    max-width: 600px;
-    max-height: 340px;
-}
-
-.portfolio-verticlecontent{
-    margin-top: 60px;
-    margin-bottom: 20px;
-}
-
-.portfolio-tokiyosusume{
-    margin-top: 60px;
-    margin-bottom: 20px;
-    width: 600px;
-    height: 340px;
-}
-
-.portfolio-VRShooting{
-    margin-top: 60px;
-    margin-bottom: 10px;
-    width: 600px;
-    height: 339px;
-}
-
 #omikuji-btn{
     width: 200px;
     height: 50px;
@@ -253,7 +116,6 @@ footer{
     background-color: #00a4aa;
     text-align: center;
     line-height: 50px;
-    color: #ffffff;
     font-size: 18px;
     border-radius: 5%;
 }
@@ -266,3 +128,118 @@ footer{
     margin-top: 40px;
     width: 150px;
 } 
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+@keyframes titleAnimation {
+    0% {
+        letter-spacing: 0.3em;
+        opacity: 0;
+    }
+}
+
+header h1 {
+    font-size: 70px;
+    font-weight: bold;
+    margin-bottom: 60px;
+    white-space: nowrap; 
+}
+
+main {
+    max-width: 1000px;
+    width: 100%;
+    margin: 50px auto;
+}
+
+.contents li {
+    position: relative;
+    /* opacity: 0;
+    transform: translateY(50px);
+    transition: 1s; */
+}
+
+.contents li.show h2,
+.contents li.show p,
+main .contents li.show img,
+main .contents li.show video{
+    transform: none;
+    opacity: 1;
+}
+
+.contents li:not(:first-of-type) {
+    margin-top: 200px;
+}
+
+.contents li:nth-of-type(odd) .contentsText {
+    right: 0;
+}
+
+.contents li:nth-of-type(even) .contentsText {
+    align-items: flex-start;
+}
+
+.contents li:nth-of-type(odd) img {
+    transform: translate(-20px, 20px);
+}
+
+.contents li:nth-of-type(even) img {
+    margin-left: auto;
+    transform: translate(20px, 20px);
+}
+
+.contentsText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: absolute;
+    text-align: left;
+    top: 40px;
+}
+
+.contents h2 {
+    font-size: 50px;
+    font-weight: bold;
+    white-space: nowrap;
+    background-color: rgba(20, 20, 20, .8);
+    padding: 10px 20px;
+    line-height: 1.4;
+    letter-spacing: 0.05em;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: 1s;
+}
+
+.contents p {
+    line-height: 1.6;
+    background-color: #555;
+    font-size: 18px;
+    max-width: 340px;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 5px;
+    opacity: 0;
+    transform: translateX(20px);
+    transition: 1s;
+}
+
+.contents img {
+    width: 60%;
+    display: block;
+    border-radius: 5px;
+    border: 15px solid rgba(107, 107, 107, 0.2);
+    opacity: 0;
+    transition: 1s 0.2s;
+}
+
+.contents video {
+    width: 60%;
+    display: block;
+    border-radius: 5px;
+    border: 15px solid rgba(107, 107, 107, 0.2);
+    opacity: 0;
+    transition: 1s 0.2s;
+}
+
